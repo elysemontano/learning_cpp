@@ -11,11 +11,14 @@ int main()
         cout << "Enter Password" << flush;
         cin >> input;
 
-        if(input != password) {
+        if(input == password) {
+            break;
+        }
+        else {
             cout << "Password Incorrect" << endl;
         }
-    } while(input != password);
-    //while ^ this is true -- do condition will repeat
+    } while(true);
+    //while ^ this is true -- do condition will repeat until break
     //once false -- will end loop
 
     cout << "Confirmed" << endl;
